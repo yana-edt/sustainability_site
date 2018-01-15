@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:2.7-stretch
+
+    steps:
+      - checkout
+      
+      - run:
+          name: install awscli
+          command: sudo apt-get install -y awscli      
+
+      - deploy:
+          name: Deploy to S3
+          command: aws s3 sync . s3://pga-sandbox-sustainability/ --exclude "README.md" --delete 
