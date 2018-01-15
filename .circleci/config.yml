@@ -13,4 +13,4 @@ jobs:
 
       - deploy:
           name: Deploy to S3
-          command: aws s3 sync . s3://pga-sandbox-sustainability/ --exclude "README.md" --delete 
+          command: aws s3 sync . s3://pga-sandbox-sustainability/ --exclude ".git/*" ".circleci/*" "README.md" --delete 
