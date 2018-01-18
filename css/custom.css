@@ -166,6 +166,9 @@ ul.bullets li {
   .space-top10 {
     padding-top: 10px;
   }
+  .space-top15 {
+    padding-top: 10px;
+  }
   .space-top20 {
     padding-top: 20px;
   }
@@ -405,7 +408,7 @@ ul.bullets li {
 }
 .pga-content .landing-white-text {
   padding-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 .pga-content .landing-center {
   padding-left: 2.25%;
@@ -555,7 +558,7 @@ ul.bullets li {
 .pga-foot .ftr p a {
   color: #fff;
 }
-.pga-foot .col-md-4.ftr {
+.pga-foot .col-md-5.ftr {
   font-size: 14px;
   font-family: 'UniversLTStd-BoldCn', Arial, sans-serif;
   text-align: left;
