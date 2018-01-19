@@ -13,7 +13,7 @@ jobs:
           
       - run:
           name: update aws profiles
-          command: cp -f .circleci/.aws/config ~/.aws/config
+          command: mkdir ~/.aws && cp -f .circleci/.aws/config ~/.aws/config
 
       - deploy:
           name: Deploy to S3
