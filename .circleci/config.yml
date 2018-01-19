@@ -17,4 +17,7 @@ jobs:
 
       - deploy:
           name: Deploy to S3
-          command: aws s3 sync . s3://impact.sandboxpga.org/ --exclude ".git/*" --exclude ".circleci/*" --exclude ".cloudformation/*" --exclude "README.md" --delete 
+          command: aws s3 sync . s3://impact.sandboxpga.org/ \
+                   --profile circleci-sandbox \
+                   --exclude ".git/*" --exclude ".circleci/*" --exclude ".cloudformation/*" --exclude "README.md" \
+                   --delete
