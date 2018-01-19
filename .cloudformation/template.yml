@@ -1,7 +1,6 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Metadata: 
   License: Apache-2.0
-Description: 'Sustainability Website'
 Parameters:
   FullWebsiteDomainName:
     Type: String
@@ -113,7 +112,7 @@ Resources:
     Properties:
       DistributionConfig:
         Enabled: 'true'
-        Comment: Sustainability Website
+        Comment: static website
         Aliases:
           - !Ref FullWebsiteDomainName
         DefaultCacheBehavior:
