@@ -9,7 +9,7 @@ jobs:
       
       - run:
           name: install awscli
-          command: sudo apt-get install -y awscli
+          command: sudo pip install --upgrade awscli
           
       - run:
           name: update aws profiles
