@@ -6,18 +6,18 @@ jobs:
 
     steps:
       - checkout
-      
+
       - run:
           name: install awscli
           command: sudo pip install --upgrade awscli
-          
+
       - run:
           name: update aws profiles
           command: mkdir ~/.aws && cp -f .circleci/.aws/config ~/.aws/config
 
       - deploy:
           name: Deploy to S3
-          command: aws s3 sync . s3://impact.sandboxpga.org/
-                   --profile circleci-sandbox
+          command: aws s3 sync . s3://pgaimpact.org/
+                   --profile circleci-prod
                    --exclude ".git/*" --exclude ".circleci/*" --exclude ".cloudformation/*" --exclude "README.md"
                    --delete
