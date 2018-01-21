@@ -111,6 +111,8 @@ strong {font-family:@bold;font-weight:normal;}
 .gri-table td p {font-size:12px; padding-bottom:0;}
 .gri-table tr.head td{background-color:lighten(@pga-blue,30%); color:@white; }
 .gri-table h4 {font-size:13px; font-family:@bold-condensed; color:@pga-brown; margin:0; padding:5px 0 10px 0;}
+.gri-table tr.gri-detail td:nth-child(1) {width: 10%;}
+.gri-table tr.gri-detail td:nth-child(3) {width: 45%;}
 .footnote {font-size:11px; text-transform:uppercase;}
 blockquote {font-size:14px; color:lighten(@pga-blue,30%)}
 blockquote .author {text-transform:uppercase; color:@pga-brown; font-size:12px; font-family:@bold-condensed;}
@@ -627,10 +629,41 @@ ul.bullets li { padding:0 0 0 0!important; margin:0 0 15px 0}
 #improving-energy a.improving-energy, 
 #improving-stewardship a.improving-stewardship, 
 #improving-partnering a.improving-partnering {color:@pga-blue!important;}
-
-
-
-
-
-
-	
+/* addition of 1/21/18 - trying to make navbar collapse just a bit sooner. due to long menu text it was wrapping/ */
+@media (max-width: 780px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+/* ---------------------- end of earlier navbar collapse ---------------- */
