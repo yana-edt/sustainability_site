@@ -35,15 +35,47 @@ body {
   }
 }
 .outer-wrap {
-  background-color: #ffffff;
+  background-color: #fff;
   margin-right: auto;
   margin-left: auto;
 }
-/* Jan */
-/*.triangle {background: url("../images/graphic-triangle.gif");
-background-repeat:no-repeat;}*/
+/* Jan - Adjust images for mobile size*/
+@media (max-width: 768px) {
+  .col-md-3.col-sm-3 {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px 0 20px 0;
+  }
+  .col-md-3.pad-right20 {
+    padding: 0 0 20px 0;
+  }
+}
 .background-dave {
   background: url("../images/fostering-supplier-case-study-dave-2.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: #dedee0;
+}
+.background-rafael {
+  background: url("../images/enhancing-hope-case-study-rafael-2.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: #dedee0;
+}
+.background-andy {
+  background: url("../images/enhancing-hope-case-study-andy-2.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: #dedee0;
+}
+.background-tajma {
+  background: url("../images/enhancing-works-case-study-tajma-2.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: #dedee0;
+}
+.background-jessica {
+  background: url("../images/enhancing-works-case-study-jessica-2.jpg");
   background-repeat: no-repeat;
   background-position: right top;
   background-color: #dedee0;
@@ -62,20 +94,27 @@ background-repeat:no-repeat;}*/
 .case-study h4 {
   text-transform: uppercase;
   font-family: 'UniversLTStd-Cn', Arial, sans-serif;
-  color: #000000;
+  color: #000;
   font-size: 16px;
   line-height: 1.3;
+}
+.case-study h5 {
+  font-family: 'UniversLTStd-Cn', Arial, sans-serif;
+  color: #777;
+  font-size: 16px;
+  line-height: 1.3;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+.case-study h5 span {
+  color: #c3ab7a;
+  font-size: 14px;
 }
 .case-study .small-photo {
   padding: 5px 25px 15px 0;
 }
-.case-study-gray-shade {
-  background-color: #ffffff;
-  opacity: 0.9;
-  padding-bottom: 15px;
-}
 .instructions {
-  color: #ff0000 !important;
+  color: #f00 !important;
 }
 h1,
 h2,
@@ -119,7 +158,7 @@ h3 {
   font-size: 105%;
 }
 .black {
-  color: #000000;
+  color: #000;
 }
 strong {
   font-family: 'UniversLTStd-Bold', Arial, sans-serif;
@@ -139,7 +178,7 @@ strong {
 }
 .gri-table tr.head td {
   background-color: #207bd7;
-  color: #ffffff;
+  color: #fff;
 }
 .gri-table h4 {
   font-size: 13px;
@@ -210,6 +249,15 @@ ul.bullets li {
   .space-bottom {
     padding-bottom: 30px;
   }
+  .space-bottom5 {
+    padding-bottom: 5px;
+  }
+  .space-bottom10 {
+    padding-bottom: 10px;
+  }
+  .space-bottom20 {
+    padding-bottom: 20px;
+  }
   .pad-left {
     padding-left: 5px;
   }
@@ -269,7 +317,7 @@ ul.bullets li {
   /* jan */
 }
 .pga-head .head-col .pga-hdr-text h5 {
-  color: #ffffff;
+  color: #fff;
   font-size: 16px;
   font-family: 'UniversLTStd-Cn', Arial, sans-serif;
 }
@@ -287,7 +335,7 @@ ul.bullets li {
   }
 }
 .pga-nav {
-  background-color: #ffffff;
+  background-color: #fff;
   /* min-height: 78px; */
   color: #81868a !important;
   /* Bootstrap Override */
@@ -308,8 +356,8 @@ ul.bullets li {
   margin-bottom: 0px;
 }
 .pga-nav .navbar-default {
-  background-color: #ffffff;
-  border-color: #ffffff;
+  background-color: #fff;
+  border-color: #fff;
 }
 @media (min-width: 768px) {
   .pga-nav {
@@ -329,7 +377,7 @@ ul.bullets li {
 .pga-nav .navbar-default .navbar-nav > .open > a,
 .pga-nav .navbar-default .navbar-nav > .open > a:hover,
 .pga-nav .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #ffffff !important;
+  background-color: #fff !important;
   color: #c3ab7a !important;
 }
 .pga-nav .dropdown-menu {
@@ -354,7 +402,7 @@ ul.bullets li {
   clear: both;
   font-weight: normal;
   line-height: 1.42857143;
-  color: #ffffff;
+  color: #fff;
   /* white-space: nowrap; */
   white-space: normal;
 }
@@ -402,7 +450,7 @@ ul.bullets li {
 @media (max-width: 767px) {
   .dropdown-toggle {
     font-weight: 600;
-    color: #000000 !important;
+    color: #000 !important;
   }
 }
 #about-pga .about-pga {
@@ -502,7 +550,7 @@ ul.bullets li {
   margin: 0 auto;
 }
 .pga-content .landing-gray-shade {
-  background-color: #ffffff;
+  background-color: #fff;
   opacity: 0.9;
   padding-bottom: 15px;
 }
@@ -580,7 +628,7 @@ ul.bullets li {
   justify-content: center;
   height: 75px;
   background-color: #83868b;
-  color: #ffffff;
+  color: #fff;
   /*jan*/
   /*jan*/
 }
@@ -591,7 +639,7 @@ ul.bullets li {
   margin-left: auto;
 }
 .pga-foot .ftr p a {
-  color: #ffffff;
+  color: #fff;
 }
 .pga-foot .col-md-5.ftr {
   font-size: 14px;
@@ -740,3 +788,4 @@ ul.bullets li {
     display: block !important;
   }
 }
+/* ---------------------- end of earlier navbar collapse ---------------- */
