@@ -285,11 +285,23 @@ ul.bullets li {
   .pad-right10 {
     padding-right: 10px;
   }
+  .pad-left15 {
+    padding-left: 15px;
+  }
+  .pad-right15 {
+    padding-right: 15px;
+  }
   .pad-left20 {
     padding-left: 20px;
   }
   .pad-right20 {
     padding-right: 20px;
+  }
+  .pad-left30 {
+    padding-left: 30px;
+  }
+  .pad-right30 {
+    padding-right: 30px;
   }
   .firsttee {
     width: 20%;
