@@ -17,4 +17,4 @@ jobs:
                    --delete
       - run:
          name: Invalidate cache
-         command: aws cloudfront create-invalidation --distribution-id ENENQFJOHRVLT --paths "/*"
+         command: aws cloudfront create-invalidation --distribution-id E28D6E1N4LM04Y --paths "/*"
