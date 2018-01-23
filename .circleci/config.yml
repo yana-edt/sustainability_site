@@ -15,6 +15,6 @@ jobs:
           command: aws s3 sync . s3://${S3_BUCKET}/
                    --exclude ".git/*" --exclude ".circleci/*" --exclude ".cloudformation/*" --exclude "README.md"
                    --delete
-#      - run:
-#          name: Invalidate cache
-#          command: aws cloudfront create-invalidation --distribution-id ${CF_DISTRIBUTION_ID} --paths "/*"
+      - run:
+         name: Invalidate cache
+         command: aws cloudfront create-invalidation --distribution-id ENENQFJOHRVLT --paths "/*"
