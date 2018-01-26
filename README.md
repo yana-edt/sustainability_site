@@ -2,7 +2,7 @@
 
 ### Built With
 
-* [Dreamweaver] (http://www.adobe.com/products/dreamweaver.html) - Static site templating/editing tool
+* [Dreamweaver](http://www.adobe.com/products/dreamweaver.html) - Static site templating/editing tool
 * [Bootstrap 3](https://getbootstrap.com/) - Responsive HTML framework
 * [LESS](http://lesscss.org/) - CSS preprocessor
 
