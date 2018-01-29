@@ -52,7 +52,7 @@ body {
 		max-width: 768px;
 	}
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	body {
 		max-width: 320px;
 	}
@@ -69,7 +69,8 @@ body {
 
 @media (max-width: 768px) {
 	
-.col-md-3.col-sm-3 {width:60%; margin:0 auto; padding:10px 0 20px 0}
+/* .col-md-3.col-sm-3 {width:60%; margin:0 auto; padding:10px 0 20px 0} */
+.col-md-3.col-sm-3 {margin:0 auto; padding:10px 0 20px 0}
 .col-md-3.pad-right20 {padding: 0 0 20px 0}
 	
 	}
@@ -371,41 +372,67 @@ ul.bullets li { padding:0 0 0 0!important; margin:0 0 15px 0}
 				width: 100% !important;
 			}
 		}
-	}		
-	.flex-row.row {		
-		display: flex;
-		
-		flex-wrap: wrap;
-		& > [class*='col-'] {
-			display: flex;
-			justify-content: space-between;
-			flex-direction: column;
-		}		
-		&:after,
-		&:before {
-			display: flex;
-		}
-		.upper,
-		.lower {		
-			align-self: flex-end;
-		}
-		.image {
-			height: auto;
-			width: 100%;
-			img {				
-				/* height: 100%;
-				width: auto; */
-			}
-		}								
 	}
+	.image {
+		height: auto;
+		width: 100%;
+		img {				
+			/* height: 100%;
+			width: auto; */
+		}
+		&.lower {
+			margin-top: 4.5%
+			
+		}
+	}
+	@media (min-width: 1000px) and (max-width: 1028px) {
+		.image.lower {
+			margin-top: 5.5%;
+		}
+	}
+	@media (max-width: 768px) {
+		.image.lower {
+			margin-top: 0%;
+		}
+	}
+	.flex-row.row {	
+		& > [class*='col-'] {
+			justify-content: space-between;
+		}
+	}
+	
+	/* @media (min-width: 1440px) {
+		.flex-row.row {				
+			display: -ms-flexbox;
+    		display: -webkit-flex;
+			display: flex;
+			flex-wrap: wrap;
+			
+			& > [class*='col-'] {
+				display: flex;
+				justify-content: space-between; 
+				-ms-flex-direction: column;
+    			-webkit-flex-direction: column;
+				flex-direction: column;
+			}		
+			&:after,
+			&:before {
+				display: flex;
+			}
+			.upper,
+			.lower {		
+				align-self: flex-end;
+				
+			}									
+		}
+	} */
 	.landing-white-text {
 		padding-top: 10px;
 		padding-bottom: 15px;
 	}
 	.landing-center {
 		padding-left: 2.25%;
-		padding-right: 2.25%;
-		
+		padding-right: 2.25%;		
 		
 		.landing-row-3-pix,
 		.landing-row-4-pix 	 {
@@ -538,11 +565,19 @@ ul.bullets li { padding:0 0 0 0!important; margin:0 0 15px 0}
 	}				
 }
 
+@media (min-width: 768px) {
+	.pga-foot {
+		display: flex;
+  		align-items: center;
+  		justify-content: center;
+	}
+}
+
 .pga-foot {
 	margin-top: 30px;
-	display: flex;
+	/* display: flex;
   	align-items: center;
-  	justify-content: center;
+  	justify-content: center; */
 	height: 75px;
 	background-color: @dk-gray;
 	color: @white;
