@@ -1,0 +1,65 @@
+.join-supplier-db {
+	margin-bottom: 30px;
+	margin-top: 25px;
+}
+.join-supplier-db .btn {
+	font-size: 1rem;
+	text-transform: uppercase;
+	background-color: #2a3658;
+	color: #fff;
+    font-family: 'UniversLTStd-BoldCn', Arial, sans-serif;
+	padding: 1rem 2rem;
+	border-color: #454f6e;
+	width: 100%;
+	white-space: normal;
+}
+.landing-hero-container img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+.background-darrell {
+	background: url(../images/darrell-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: #ecedef;
+}
+.case-study .small-photo {
+	padding: 5px 25px 0px 0;
+}
+.case-study {
+	padding: 30px;
+}
+.slick-dotted.slick-slider {
+	margin-bottom: 15px;
+}
+.supplier-form {
+	margin-top: 15px;
+}
+.supplier-form label {
+	display: block;
+}
+.supplier-form .form-group {
+	padding: 2px;
+}
+label span.red {
+	color: #b00;
+	padding-left: 5px;
+}
+
+@media all and (max-width: 767px) {
+	.case-study .small-photo {
+		padding: 15px;
+	}
+	.case-study h4 {
+		font-size: 12px;
+	}
+	.back-to-top {
+		bottom: 15px;
+		right: 15px;
+	}
+	.slick-dots {
+		bottom: -10px;
+		width: calc(100% - 30px);
+	}
+}
