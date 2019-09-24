@@ -5,17 +5,9 @@ Parameters:
   FullWebsiteDomainName:
     Type: String
     Description: e.g. pgaimpact.org or impact.sandboxpga.org. DO NOT add www.
-  CreateWWW: 
-    Type: String
-    Description: e.g. www.pgaimpact.org. Do not use if main website uses a subdomain. Wildcard SSL cert won't be valid for www.impact.sandboxpga.org
-    AllowedValues: [true, false]
-    Default: true
   Route53HostedZoneId:
     Type: "AWS::Route53::HostedZone::Id"
     Description: Hosted Zone Id of the domain
-      
-Conditions: 
-  CreateWWWRedirect: !Equals [ !Ref CreateWWW, true ]
 
 Metadata: 
   AWS::CloudFormation::Interface: 
@@ -25,13 +17,10 @@ Metadata:
           default: "Domain"
         Parameters: 
           - FullWebsiteDomainName
-          - CreateWWW
           - Route53HostedZoneId
     ParameterLabels:
       FullWebsiteDomainName: 
         default: "Full Domain Name"
-      DNSNameForWWW: 
-        default: "Auto-create www Redirect"
       Route53HostedZoneId: 
         default: "Hosted Zone ID"
 
