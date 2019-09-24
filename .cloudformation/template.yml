@@ -30,14 +30,10 @@ Metadata:
     ParameterLabels:
       FullWebsiteDomainName: 
         default: "Full Domain Name"
-      CreateWWW: 
+      DNSNameForWWW: 
         default: "Auto-create www Redirect"
       Route53HostedZoneId: 
         default: "Hosted Zone ID"
-      AcmCertificateArn: 
-        default: "ACM SSL Certificate ARN"
-      CloudfrontDefaultTTL: 
-        default: "Default Cache TTL"
 
 Resources:
               
